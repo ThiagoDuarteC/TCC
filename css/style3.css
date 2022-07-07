@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: #ededed;
+    overflow-x: hidden;
+    min-width: 100vh;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Header inicio */
+
+header{
+    width: 100vw;
+    height: 450px;
+    background: linear-gradient(to right,#00849b ,#00404a);
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 210px;
+    height: 50px;
+    background-image: url(../Images/Logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 70px;
+    float: left;
+}
+
+header h1{
+    color: white;
+    font-size: 50px;
+    margin-top: 140px;
+    float: left;
+}
+
+.icone {
+    height: 28vh;
+    width: 14vw;
+    background-image: url(../Images/icone.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+
+/* Header fim */
+
+
+/* Bootstrap inicio */
+
+
+
+.row{
+    width: 27rem;
+    float: left;
+    margin-left: 2.5%;
+}
+
+.single_advisor_profile {
+    position: relative;
+    margin-bottom: 50px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    z-index: 1;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.single_advisor_profile .advisor_thumb {
+    position: relative;
+    z-index: 1;
+    border-radius: 15px 15px 0 0;
+    margin: 0 auto;
+    padding: 1.87rem 1.87rem 1.87rem 1.87rem; 
+    background-color: #e5e6e8;
+    overflow: hidden;
+}
+
+.button{
+    background-color: transparent;
+    font-size: 14px;
+    border: 3px solid black;
+    padding: 4px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.single_advisor_profile .advisor_thumb::after {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    width: 150%;
+    height: 80px;
+    bottom: -45px;
+    left: -25%;
+    content: "";
+    background-color: #ffffff;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+@media only screen and (max-width: 575px) {
+    .single_advisor_profile .advisor_thumb::after {
+        height: 160px;
+        bottom: -90px;
+    }
+}
+.single_advisor_profile .advisor_thumb .social-info {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    right: 30px;
+    text-align: right;
+}
+.single_advisor_profile .advisor_thumb .social-info a {
+    font-size: 14px;
+    color: #020710;
+    padding: 0 5px;
+}
+.single_advisor_profile .advisor_thumb .social-info a:hover,
+.single_advisor_profile .advisor_thumb .social-info a:focus {
+    color: #3f43fd;
+}
+.single_advisor_profile .advisor_thumb .social-info a:last-child {
+    padding-right: 0;
+}
+.single_advisor_profile .single_advisor_details_info {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    text-align: right;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    border-radius: 0 0 15px 15px;
+    background-color: #ffffff;
+}
+.single_advisor_profile .single_advisor_details_info::after {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    content: "";
+    top: 12px;
+    right: 30px;
+}
+.single_advisor_profile .single_advisor_details_info h6 {
+    margin-bottom: 0.25rem;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single_advisor_profile .single_advisor_details_info h6 {
+        font-size: 14px;
+    }
+}
+.single_advisor_profile .single_advisor_details_info p {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single_advisor_profile .single_advisor_details_info p {
+        font-size: 12px;
+    }
+}
+.single_advisor_profile:hover .advisor_thumb::after,
+.single_advisor_profile:focus .advisor_thumb::after {
+    background-color: #00849b;
+}
+.single_advisor_profile:hover .advisor_thumb .social-info a,
+.single_advisor_profile:focus .advisor_thumb .social-info a {
+    color: #ffffff;
+}
+.single_advisor_profile:hover .advisor_thumb .social-info a:hover,
+.single_advisor_profile:hover .advisor_thumb .social-info a:focus,
+.single_advisor_profile:focus .advisor_thumb .social-info a:hover,
+.single_advisor_profile:focus .advisor_thumb .social-info a:focus {
+    color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info,
+.single_advisor_profile:focus .single_advisor_details_info {
+    background-color: #00849b;
+}
+.single_advisor_profile:hover .single_advisor_details_info::after,
+.single_advisor_profile:focus .single_advisor_details_info::after {
+    background-color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info h6,
+.single_advisor_profile:focus .single_advisor_details_info h6 {
+    color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info p,
+.single_advisor_profile:focus .single_advisor_details_info p {
+    color: #ffffff;
+}
+
+.advisor_thumb img{
+    width: 16rem;
+    height: 16rem;
+}
+
+.single_advisor_profile:hover .button,
+.single_advisor_profile:focus .button {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+/* Bootstrap fim */
+
+@media screen and (max-width: 1000px) {
+    .icone{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    header h1{
+        margin-top: 100px;
+    }
+    .row{
+        width: 70%;
+        margin: 0 5%;
+    }
+}

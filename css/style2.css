@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(to right,#00849b ,#00404a);
+}
+
+.clear{
+    clear: both;
+}
+
+/* Header inicio */
+
+header{
+    width: 100%;
+    background-color: #01132a;
+    padding: 40px 0;
+}
+
+.logo{
+    width: 200px;
+    height: 45px;
+    background-image: url(../Images/Logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Header fim */
+
+/* Main inicio */
+
+main form{
+    position: relative;
+    top: 7vh;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+main p{
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+main .half input{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+main .left{
+    float: left;
+    margin-right: 100px;
+}
+
+main .full input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+main .desc textarea{
+    height: 5rem;
+    resize: none;
+    width: 700px;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+main input{
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 14px;
+}
+
+main .button{
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px solid white;
+    padding: 8px 38px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+
+form a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: -16px;
+}
+
+/* Main fim */
+
+@media screen and (max-width: 750px){
+    .container{
+        max-width: 500px;
+        margin: 0 10%;
+    }
+    main .half{
+        width: 100%;
+    }
+    main .desc textarea, main .full input, main .half input{
+        width: 80%;
+    }
+    main .left{
+        margin-right: 0 ;
+    }
+
+}

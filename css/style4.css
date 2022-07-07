@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(to right,#00849b ,#00404a);
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header inicio */
+
+header{
+    width: 100%;
+    background-color: #01132a;
+    padding: 40px 0;
+}
+
+.logo{
+    width: 200px;
+    height: 45px;
+    background-image: url(../Images/Logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+/* Header fim */
+
+/* Main inicio */
+
+.foto{
+    width: 50%;
+    float: right;
+    margin-top: 120px;
+}
+
+.foto img{
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 50px;
+}
+
+main{
+    margin-top: 120px;
+    color: white;
+    padding-bottom: 30px;
+    width: 50%;
+    display: inline-block;
+}
+
+main h2{
+    font-size: 40px;
+}
+
+.contato{
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+.descricao{
+    font-size: 20px;
+}
+
+.button{
+    margin-top: 30px;
+    background-color: transparent;
+    font-size: 20px;
+    border: 3px solid white;
+    padding: 6px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Main fim */
